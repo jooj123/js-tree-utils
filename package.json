@@ -1,0 +1,28 @@
+{
+  "name": "node-tree",
+  "version": "1.0.0",
+  "description": "Node Binary Search Tree Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node ./example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jooj123/node-tree.git"
+  },
+  "keywords": [
+    "node",
+    "binary",
+    "search",
+    "tree"
+  ],
+  "author": "Martin Jujou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jooj123/node-tree/issues"
+  },
+  "homepage": "https://github.com/jooj123/node-tree#readme",
+  "dependencies": {
+  }
+}
