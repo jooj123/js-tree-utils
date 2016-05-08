@@ -12,10 +12,10 @@ $ npm install node-tree --save
 ## Standard Binary Search Tree
 
 Worst case big O notation:
-Space: O(n)
-Search: O(n)
-Insert: O(n)
-Delete: O(n)
+- Space: O(n)
+- Search: O(n)
+- Insert: O(n)
+- Delete: O(n)
 
 ### Binary Search Tree Usage
 
@@ -76,10 +76,10 @@ btree.size()
 ## AVL Tree
 
 Worst case big O notation:
-Space: O(n)
-Search: O(log n)
-Insert: O(log n)
-Delete: O(log n)
+- Space: O(n)
+- Search: O(log n)
+- Insert: O(log n)
+- Delete: O(log n)
 
 ### AVL Tree Usage
 
