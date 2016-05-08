@@ -33,7 +33,7 @@ var options = {
 };
 
 var btree = new BinarySearchTree(options);
-``
+```
 
 Insert records (key, value):
 
@@ -73,7 +73,7 @@ btree.size()
 ```
 
 
-## AVL Tree Tree
+## AVL Tree
 
 Worst case big O notation:
 Space: O(n)
@@ -97,6 +97,6 @@ var options = {
 };
 
 var avlTree = new AvlTree(options);
-``
+```
 
 
