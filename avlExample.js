@@ -7,8 +7,7 @@ var options = {
 var avltree = new AvlTree(options);
 avltree.insert(2, 'Joe');
 avltree.insert(5, 'Sally');
-// some sort of edge case that needs fixing - null checks?
-//avltree.insert(5, 'Sam');
+avltree.insert(5, 'Sam');
 avltree.insert(3, 'Sam');
 avltree.insert(15, 'Helen');
 avltree.insert(2, 'Alana');

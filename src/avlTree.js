@@ -99,7 +99,7 @@ AvlTree.prototype.insertNode = function(node, key, value) {
 
   // left left case
   if (balance > 1 && key < node.left.key) {
-    return this.rightRotate
+    return this.rightRotate(node);
   }
 
   // right right case
