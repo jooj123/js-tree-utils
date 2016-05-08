@@ -1,5 +1,5 @@
 {
-  "name": "node-tree",
+  "name": "js-tree-utils",
   "version": "1.0.0",
   "description": "Node Binary Search Tree Library",
   "main": "index.js",
