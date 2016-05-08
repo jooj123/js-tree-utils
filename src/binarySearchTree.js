@@ -5,9 +5,9 @@ function BinarySearchTree(options) {
   this.root = null;
 }
 
-BinarySearchTree.prototype.insert = function(value) {
+BinarySearchTree.prototype.insert = function(key, value) {
 
-  var node = new Node(value);
+  var node = new Node(key, value);
   var current;
 
   if (this.root === null) {
@@ -18,14 +18,14 @@ BinarySearchTree.prototype.insert = function(value) {
   current = this.root;
 
   while (true) {
-    if (value < current.value) {
+    if (key < current.key) {
       if (current.left === null) {
         current.left = node;
       } else {
         current = current.left;
       }
 
-    } else if (value > current.value) {
+    } else if (key > current.key) {
 
       if (current.right === null) {
         current.right = node;
@@ -39,7 +39,7 @@ BinarySearchTree.prototype.insert = function(value) {
 }
 
 // optionally search from a specific node
-BinarySearchTree.prototype.contains = function(value, node) {
+BinarySearchTree.prototype.contains = function(key, node) {
   var current = node;
 
   // search from the root node is node not specfied
@@ -51,19 +51,19 @@ BinarySearchTree.prototype.contains = function(value, node) {
     return false; // nothing found
   }
 
-  if (value === current.value) {
+  if (key === current.key) {
     return  true;
-  } else if (value > current.value) {
-    return this.contains(value, current.right);
-  } else if (value < current.value) {
-    return this.contains(value, current.left);
+  } else if (key > current.key) {
+    return this.contains(key, current.right);
+  } else if (key < current.key) {
+    return this.contains(key, current.left);
   }
 }
 
 BinarySearchTree.prototype.inOrder = function() {
   var list = [];
   this.traverse(this.root, function(node) {
-    console.log('Value: ', node.value);
+    console.log('Key: %s Value: %s', node.key, node.value);
     list.push(node);
   });
 
@@ -84,7 +84,7 @@ BinarySearchTree.prototype.traverse = function(node, func) {
   }
 }
 
-BinarySearchTree.prototype.min = function() {
+BinarySearchTree.prototype.minKey = function() {
 
   var current = this.root;
   if (this.root === null) {
@@ -95,10 +95,10 @@ BinarySearchTree.prototype.min = function() {
     current = current.left;
   }
 
-  return current.value;
+  return current.key;
 }
 
-BinarySearchTree.prototype.max = function() {
+BinarySearchTree.prototype.maxKey = function() {
 
   var current = this.root;
   if (this.root === null) {
@@ -109,7 +109,7 @@ BinarySearchTree.prototype.max = function() {
     current = current.right;
   }
 
-  return current.value;
+  return current.key;
 }
 
 BinarySearchTree.prototype.size = function() {

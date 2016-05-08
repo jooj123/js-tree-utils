@@ -1,3 +1,4 @@
 module.exports = {
-  BinarySearchTree: require('./src/binarySearchTree.js')
+  BinarySearchTree: require('./src/binarySearchTree.js'),
+  AvlTree: require('./src/avlTree.js')
 }
