@@ -99,4 +99,4 @@ var options = {
 var avlTree = new AvlTree(options);
 ```
 
-
+An Avl Tree has the same methods available as the standard BST.
