@@ -92,18 +92,5 @@ describe('AVL Tree', () => {
 
   });
 
-  it('should be correct height', () => {
-    const avlTree = new AvlTree();
-
-    avlTree.insert(5, 'joe');
-    avlTree.insert(-1, 'sam');
-    avlTree.insert(2, 'stuff');
-    avlTree.insert(100, 'henry');
-    avlTree.insert(13113, 'jonny');
-    avlTree.insert(-230, 'ken');
-
-    assert.equal(avlTree.height(), 2);
-
-  });
 });
 
