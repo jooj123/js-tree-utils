@@ -63,7 +63,6 @@ BinarySearchTree.prototype.contains = function(key, node) {
 BinarySearchTree.prototype.inOrder = function() {
   var list = [];
   this.traverse(this.root, function(node) {
-    console.log('Key: %s Value: %s', node.key, node.value);
     list.push(node);
   });
 
